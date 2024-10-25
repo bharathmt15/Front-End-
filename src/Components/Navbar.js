@@ -4,9 +4,13 @@ export default function Navbar() {
     return (
         <>
             <div className="container">
-                <ul>
-                    <li>Home</li>
-                </ul>
+                <div className="elems">
+                    <ul>
+                        <li>Home</li>
+                        <li>Get Us</li>
+                        <li>Explore</li>
+                    </ul>
+                </div>
             </div>
         </>
     );
