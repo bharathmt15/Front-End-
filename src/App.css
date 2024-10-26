@@ -3,9 +3,16 @@
     padding: 0;
 }
 
+body {
+    background-image: url("./webbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}
+
 .container {
     padding: 26px;
-    background-color: blue;
+    /* background-color: #262605; */
     color: white;
     gap: 10px;
     align-items: center;
@@ -28,9 +35,14 @@
     cursor: pointer;
 }
 
+.elems ul li:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
 .typing {
     border: 2px solid black;
-    width: 520px;
+    width: 550px;
     height: 250px;
     /* transform: translate(20px, 100px); */
     margin-top: 50px;

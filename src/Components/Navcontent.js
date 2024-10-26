@@ -1,9 +1,8 @@
 import React from "react";
-
 export default function Navcontent() {
     return (
         <>
-            <div className="typing">hello this a typing text box area </div>
+            <div className="typ">Hey this is a typing box area</div>
         </>
     );
 }
