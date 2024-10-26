@@ -7,15 +7,19 @@ body {
     background-image: url("./webbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: red;
+    color: #ebf9fa;
 }
 
 .container {
-    padding: 26px;
-    /* background-color: #262605; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 36px;
     color: white;
+    display: flex;
     gap: 10px;
-    align-items: center;
+    font-size: larger;
 }
 
 .container ul li {
@@ -40,11 +44,12 @@ body {
     color: aqua;
 }
 
-.typing {
-    border: 2px solid black;
-    width: 550px;
-    height: 250px;
-    /* transform: translate(20px, 100px); */
-    margin-top: 50px;
-    margin-left: 25px;
+.text {
+    /* border: 2px solid white; */
+    width: 560px;
+    height: 300px;
+    transform: translate(54px, 150px);
+    font-size: 45px;
+    cursor: default;
+    color: white;
 }
