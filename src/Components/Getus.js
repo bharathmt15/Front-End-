@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 export default function Getus() {
     return (
-        <div>
-            <>Get us page where you can contact us</>
-        </div>
+        <>
+            <div className="get">help me to get there</div>
+        </>
     );
 }
