@@ -44,3 +44,51 @@ body {
     color: white; /* Change text color on hover */
     text-decoration: underline; /* Add underline on hover */
 }
+
+.text {
+    /* border: 2px solid red;    */
+    height: 70px;
+    width: 750px;
+    padding: 50px;
+    transform: translate(40px, 90px);
+    font-size: 43px;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: orange;
+    margin-left: 11px;
+    cursor: default;
+}
+
+.subnav {
+    /* border: 2px solid white; */
+    padding: 20px;
+}
+
+.subnav ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+}
+
+.subnav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.subnav ul li :hover {
+    cursor: pointer;
+}
+
+.subnav ul li a:hover,
+.subnav ul li i:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.subnav ul li i {
+    font-size: 1.5em;
+    transition: color 0.3s;
+}

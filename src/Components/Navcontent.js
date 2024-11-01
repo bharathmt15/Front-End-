@@ -1,8 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
+
 export default function Navcontent() {
+    useEffect(() => {
+        const typed = new window.Typed(".auto-typed", {
+            strings: [
+                "Discover a New Way to Travel",
+                "Experience Traveling Like Never Before",
+                "Make Every Journey Memorable",
+                "Travel Effortlessly, Arrive Easily",
+            ],
+            typeSpeed: 90,
+            backSpeed: 80,
+            loop: true,
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
-        <div className="nav-content">
-            <div className="text">Travel With Ease </div>
+        <div className="text">
+            <span className="auto-typed"></span>
         </div>
     );
 }
