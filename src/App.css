@@ -35,20 +35,20 @@ body {
 }
 
 .elems ul li a {
-    color: aqua; /* Default text color */
-    text-decoration: none; /* Remove underline */
+    color: aqua;
+    text-decoration: none;
     cursor: pointer;
 }
 
 .elems ul li a:hover {
-    color: white; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: white;
+    text-decoration: underline;
 }
 
 .text {
-    /* border: 2px solid red;    */
+    /* border: 2px solid red; */
     height: 70px;
-    width: 750px;
+    width: 780px;
     padding: 50px;
     transform: translate(40px, 90px);
     font-size: 43px;
