@@ -20,8 +20,10 @@ export default function Navcontent() {
     }, []);
 
     return (
-        <div className="text">
-            <span className="auto-typed"></span>
-        </div>
+        <>
+            <div className="text">
+                <span className="auto-typed"></span>
+            </div>
+        </>
     );
 }
