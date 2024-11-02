@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import {Link} from "react-router-dom";
 
 export default function Navcontent() {
     useEffect(() => {
@@ -9,8 +10,9 @@ export default function Navcontent() {
                 "Make Every Journey Special",
                 "Travel Effortlessly and Easily",
             ],
-            typeSpeed: 80,
-            backSpeed: 110,
+            typeSpeed: 30,
+            backSpeed: 40,
+            backDelay: 3000,
             loop: true,
         });
 
@@ -25,7 +27,9 @@ export default function Navcontent() {
                 <span className="auto-typed"></span>
             </div>
             <div className="btns">
-                <button className="gstrd">Get Started</button>
+                <Link to="/getstarted">
+                    <button className="gstrd">Get Started</button>
+                </Link>
             </div>
         </>
     );
