@@ -24,6 +24,9 @@ export default function Navcontent() {
             <div className="text">
                 <span className="auto-typed"></span>
             </div>
+            <div className="btns">
+                <button className="gstrd">Get Started</button>
+            </div>
         </>
     );
 }

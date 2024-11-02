@@ -92,3 +92,22 @@ span {
     font-size: 1.5em;
     transition: color 0.3s;
 }
+
+.btns {
+    border: 2px solid white;
+    padding: 25px;
+    transform: translate(190px, 200px);
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gstrd {
+    color: white;
+    background-color: #2e022b;
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid purple;
+    cursor: pointer;
+}
