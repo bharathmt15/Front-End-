@@ -8,7 +8,8 @@ body {
     background-repeat: repeat;
     background-size: cover;
     color: #ebf9fa;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-left: 17px;
 }
 .container {
     position: fixed;
@@ -78,9 +79,6 @@ span {
 .subnav ul li a {
     color: white;
     text-decoration: none;
-}
-.subnav ul li :hover {
-    cursor: pointer;
 }
 
 .subnav ul li a:hover,
