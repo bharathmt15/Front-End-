@@ -6,13 +6,13 @@ import Navcontent from "./Components/Navcontent";
 import Getus from "./Components/Getus";
 import Explore from "./Components/Explore";
 import Login from "./Components/Login";
-// import Subnav from "./Components/Subnav";
+import Subnav from "./Components/Subnav";
 
 function App() {
     return (
         <Router>
             <Navbar />
-            {/* <Subnav /> */}
+            <Subnav />
             <Routes>
                 <Route path="/" element={<Navcontent />} />
                 <Route path="/get-us" element={<Getus />} />
