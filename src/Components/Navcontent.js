@@ -7,7 +7,7 @@ export default function Navcontent() {
             strings: [
                 "Discover a New Way to Travel",
                 "Experience Traveling Like Never Before",
-                "Make Every Journey Special",
+                "Make Every Travel Special",
                 "Travel Effortlessly and Easily",
             ],
             typeSpeed: 30,
