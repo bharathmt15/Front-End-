@@ -6,7 +6,7 @@ export default function Login() {
             <div className="login">
                 <form className="form">
                     <div className="form-title">
-                        <span>sign in to your</span>
+                        <span>Welcome Back to Your</span>
                     </div>
                     <div className="title-2">
                         <span>SPACE</span>
