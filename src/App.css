@@ -134,6 +134,7 @@ span {
     align-items: center;
     height: 80vh;
 }
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -466,36 +467,36 @@ span {
     animation-delay: 1.6s;
     animation-duration: 1.6s;
 }
-/* src/Explore.css */
+
 .explore-page {
     padding: 20px;
     font-family: "Arial", sans-serif;
     color: #333;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Ensure it takes full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .content-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 800px; /* Limit max width of the grid */
-    margin: 0 auto; /* Center grid within parent */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .explore-card {
-    background-color: transparent; /* Keep background transparent */
+    background-color: transparent;
     border-radius: 8px;
-    border: 1px solid #ddd; /* Optional: a border to differentiate cards */
+    border: 1px solid #ddd;
     overflow: hidden;
     transition: transform 0.3s;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 250px; /* Reduced height for smaller cards */
-    width: 200px; /* Set a fixed width for all cards */
+    height: 250px;
+    width: 200px;
 }
 
 .explore-card:hover {
@@ -504,26 +505,25 @@ span {
 
 .card-image {
     width: 100%;
-    height: 60%; /* Keeps image proportionate */
+    height: 60%;
     object-fit: cover;
 }
 
 .card-title {
-    font-size: 1.2rem; /* Reduced font size */
-    margin: 10px;
+    font-size: 1.2rem;
 }
 
 .card-description {
-    font-size: 0.9rem; /* Reduced font size */
+    font-size: 0.9rem;
     margin: 10px;
     color: #666;
-    flex-grow: 1; /* Make description take remaining space */
+    flex-grow: 1;
 }
 
 .explore-button {
     background-color: #007bff;
     color: #fff;
-    padding: 8px 15px; /* Adjusted padding for smaller buttons */
+    padding: 8px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -533,4 +533,23 @@ span {
 
 .explore-button:hover {
     background-color: #0056b3;
+}
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .explore-card {
+        width: 180px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .explore-card {
+        width: 100%;
+        height: 200px;
+    }
 }
