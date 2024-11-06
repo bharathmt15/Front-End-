@@ -70,7 +70,7 @@ const Explore = () => {
                         />
                         <h2 className="card-title">{item.title}</h2>
                         <p className="card-description">{item.description}</p>
-                        <button className="explore-button">Explore More</button>
+                        <button className="explore-button">Add location</button>
                     </div>
                 ))}
             </div>

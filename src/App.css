@@ -468,6 +468,15 @@ span {
     animation-duration: 1.6s;
 }
 
+.exp {
+    font-size: 23px;
+    color: aqua;
+    cursor: default;
+    text-align: justify;
+    width: 1450px;
+    margin-left: 32px;
+    line-height: 28px;
+}
 .explore-page {
     padding: 20px;
     font-family: "Arial", sans-serif;
@@ -476,6 +485,7 @@ span {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: white;
 }
 
 .content-grid {
@@ -497,6 +507,7 @@ span {
     flex-direction: column;
     height: 250px;
     width: 200px;
+    color: white;
 }
 
 .explore-card:hover {
