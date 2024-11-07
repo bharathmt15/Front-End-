@@ -593,3 +593,22 @@ span {
     width: 1510px;
     transform: translate(0px, 400px);
 }
+
+.core {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 1300px;
+}
+
+.locbtn {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+}
+.locbtn:hover {
+    cursor: pointer;
+}

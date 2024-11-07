@@ -8,6 +8,7 @@ import Explore from "./Components/Explore";
 import Login from "./Components/Login";
 import Subnav from "./Components/Subnav";
 import Footer from "./Components/Footer";
+import Core from "./Components/Core";
 function App() {
     return (
         <>
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/get-us" element={<Getus />} />
                     <Route path="/explore" element={<Explore />} />
                     <Route path="/getstarted" element={<Login />} />
+                    <Route path="/api/key/location" element={<Core />} />
                 </Routes>
             </Router>
             <Footer />

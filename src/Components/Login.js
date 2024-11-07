@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, Link} from "react-router-dom";
 
 export default function Login() {
     const [post, setPost] = useState({
@@ -71,7 +71,9 @@ export default function Login() {
                 </div>
 
                 <button type="submit" className="submit">
-                    <span className="sign-text">Sign up</span>
+                    <Link to="/api/key/location">
+                        <span className="sign-text">Sign up</span>
+                    </Link>
                 </button>
 
                 <p className="signup-link">
