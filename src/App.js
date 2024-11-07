@@ -7,19 +7,22 @@ import Getus from "./Components/Getus";
 import Explore from "./Components/Explore";
 import Login from "./Components/Login";
 import Subnav from "./Components/Subnav";
-
+import Footer from "./Components/Footer";
 function App() {
     return (
-        <Router>
-            <Navbar />
-            <Subnav />
-            <Routes>
-                <Route path="/" element={<Navcontent />} />
-                <Route path="/get-us" element={<Getus />} />
-                <Route path="/explore" element={<Explore />} />
-                <Route path="/getstarted" element={<Login />} />
-            </Routes>
-        </Router>
+        <>
+            <Router>
+                <Navbar />
+                <Subnav />
+                <Routes>
+                    <Route path="/" element={<Navcontent />} />
+                    <Route path="/get-us" element={<Getus />} />
+                    <Route path="/explore" element={<Explore />} />
+                    <Route path="/getstarted" element={<Login />} />
+                </Routes>
+            </Router>
+            <Footer />
+        </>
     );
 }
 

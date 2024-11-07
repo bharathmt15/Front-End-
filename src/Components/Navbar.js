@@ -10,7 +10,7 @@ export default function Navbar() {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/get-us">Get Us</Link>
+                            <Link to="/get-us">Add Location</Link>
                         </li>
                         <li>
                             <Link to="/explore">Explore</Link>
