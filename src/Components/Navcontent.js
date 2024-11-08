@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import {Link} from "react-router-dom";
+import phone from "../Phone.png";
 
 export default function Navcontent() {
     useEffect(() => {
@@ -31,6 +32,7 @@ export default function Navcontent() {
                     <button className="gstrd">Get Started</button>
                 </Link>
             </div>
+            <img src={phone} alt="phone" />
         </>
     );
 }

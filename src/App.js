@@ -20,7 +20,7 @@ function App() {
                     <Route path="/get-us" element={<Getus />} />
                     <Route path="/explore" element={<Explore />} />
                     <Route path="/getstarted" element={<Login />} />
-                    <Route path="/api/key/location" element={<Core />} />
+                    <Route path="/api/location" element={<Core />} />
                 </Routes>
             </Router>
             <Footer />

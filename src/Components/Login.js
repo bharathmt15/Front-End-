@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import {useNavigate, Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export default function Login() {
     const [post, setPost] = useState({
@@ -15,12 +15,13 @@ export default function Login() {
         setPost({...post, [event.target.name]: event.target.value});
     };
 
-    const handleSubmit = (event2) => {
-        event2.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
         axios
             .post("http://localhost:4000/api/test", post)
             .then((res) => {
-                navigate("/"); // Redirect to home page
+                console.log("User registered successfully", res.data);
+                navigate("/api/location");
             })
             .catch((err) => {
                 console.log("Error submitting form:", err);
@@ -71,14 +72,12 @@ export default function Login() {
                 </div>
 
                 <button type="submit" className="submit">
-                    <Link to="/api/key/location">
-                        <span className="sign-text">Sign up</span>
-                    </Link>
+                    <span className="sign-text">Sign up</span>
                 </button>
 
                 <p className="signup-link">
                     <span>Already have an account?</span>
-                    <a className="up" href="/">
+                    <a className="up" href="/login">
                         Login!
                     </a>
                 </p>
