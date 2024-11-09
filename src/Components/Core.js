@@ -91,12 +91,12 @@ const LocationFetcher = () => {
                                 <li key={index}>{place}</li>
                             ))
                         ) : (
-                            <li>No nearby places found.</li>
+                            <li>No Nearby Places Found.</li>
                         )}
                     </ul>
                 </div>
             )}
-            {error && <p style={{color: "red"}}>{error}</p>}
+            {error && <p style={{color: "white"}}>{error}</p>}
         </div>
     );
 };
