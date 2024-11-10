@@ -1,9 +1,18 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const LocationFetcher = () => {
-    const [location, setLocation] = useState(null);
-    const [nearbyPlaces, setNearbyPlaces] = useState([]);
+    const [location, setLocation] = useState(
+        localStorage.getItem("location") || null
+    );
+    const [nearbyPlaces, setNearbyPlaces] = useState(
+        JSON.parse(localStorage.getItem("nearbyPlaces")) || []
+    );
     const [error, setError] = useState(null);
+
+    useEffect(() => {
+        localStorage.setItem("location", location);
+        localStorage.setItem("nearbyPlaces", JSON.stringify(nearbyPlaces));
+    }, [location, nearbyPlaces]);
 
     const getLocation = () => {
         if (navigator.geolocation) {
@@ -76,24 +85,29 @@ const LocationFetcher = () => {
 
     return (
         <div className="core">
-            <h1>Get User Location</h1>
-
-            <button onClick={getLocation} className="locbtn">
-                Get Location
-            </button>
+            {!nearbyPlaces.length && (
+                <>
+                    <h1>Get User Location</h1>
+                    <button onClick={getLocation} className="locbtn">
+                        Get Location
+                    </button>
+                </>
+            )}
             {location && (
                 <div>
                     <strong>Location: {location}</strong>
                     <h3>Nearby Places:</h3>
-                    <ul>
+                    <div className="nearby-places-grid">
                         {nearbyPlaces.length > 0 ? (
                             nearbyPlaces.map((place, index) => (
-                                <li key={index}>{place}</li>
+                                <div className="place-card" key={index}>
+                                    {place}
+                                </div>
                             ))
                         ) : (
-                            <li>No Nearby Places Found.</li>
+                            <div>No Nearby Places Found.</div>
                         )}
-                    </ul>
+                    </div>
                 </div>
             )}
             {error && <p style={{color: "white"}}>{error}</p>}

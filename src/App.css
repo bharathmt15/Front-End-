@@ -619,3 +619,23 @@ span {
 .locbtn:hover {
     cursor: pointer;
 }
+
+.core {
+    text-align: center;
+    color: white;
+}
+
+.nearby-places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.place-card {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
